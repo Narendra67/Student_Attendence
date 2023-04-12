@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Attendance Sheet</title>
+    <link rel="stylesheet" href="atten.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Attendance System</h1>
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>Present</th>
+          <th>Absent</th>
+        </tr>
+        <tr>
+          <td>Narendra</td>
+          <td><input type="checkbox" name="attendance" value="present" /></td>
+          <td><input type="checkbox" name="attendance" value="absent" /></td>
+        </tr>
+        <tr>
+          <td>Arnav</td>
+          <td><input type="checkbox" name="attendance" value="present" /></td>
+          <td><input type="checkbox" name="attendance" value="absent" /></td>
+        </tr>
+        <tr>
+          <td>Sahil</td>
+          <td><input type="checkbox" name="attendance" value="present" /></td>
+          <td><input type="checkbox" name="attendance" value="absent" /></td>
+        </tr>
+      </table>
+      <button onclick="submitAttendance()">Submit Attendance</button>
+      <a href="atten.html" id="download-btn">Download</a>
+      <button id="add-name-button">Add Name</button>
+      <ul id="names-list"></ul>
+    </div>
+    <script src="atten.js"></script>
+  </body>
+</html>

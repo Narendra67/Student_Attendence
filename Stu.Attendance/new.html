@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #add-name-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          #add-name-button:hover {
+            background-color: #3e8e41;
+          }
+          
+          #names-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          #names-list li {
+            margin-bottom: 5px;
+          }
+          
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button id="add-name-button">Add Name</button>
+<ul id="names-list"></ul>
+<script>
+    const addNameButton = document.getElementById("add-name-button");
+const namesList = document.getElementById("names-list");
+
+addNameButton.addEventListener("click", () => {
+  const name = prompt("Enter a name:");
+  if (name) {
+    const li = document.createElement("li");
+    li.textContent = name;
+    namesList.appendChild(li);
+  }
+});
+
+</script>
+</body>
+</html>

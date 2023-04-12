@@ -1,0 +1,91 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.container {
+	margin: 50px auto;
+	max-width: 800px;
+	padding: 20px;
+	background-color: #76fce5;
+	box-shadow: 0px 0px 10px hsla(83, 91%, 63%, 0.102);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+button {
+	display: block;
+	margin: 30px auto 0;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: hwb(122 16% 49%);
+}
+#download-btn {
+    display: inline;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #2196F3;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+download-btn:hover{
+    background-color: hwb(157 2% 6%);
+}
+
+
+/* Button */
+#add-name-button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  #add-name-button:hover {
+	background-color: #3e8e41;
+  }
+  
+  #names-list {
+	margin-top: 20px;
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #names-list li {
+	margin-bottom: 5px;
+  }
